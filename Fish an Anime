@@ -1,17 +1,1 @@
--- Fish an Anime (Key System Protected)
--- Hosted via chrisalonz repository
-
-local success, result = pcall(function()
-    return game:HttpGet("https://keysystem.work.ink/scripts/01a18fa2-7fda-736b-99c9-c11224629217")
-end)
-
-if success and result and #result > 0 then
-    local executeScript, err = loadstring(result)
-    if executeScript then
-        executeScript()
-    else
-        warn("[ERROR] Gagal compile Work.ink script: " .. tostring(err))
-    end
-else
-    warn("[ERROR] Gagal mengambil data dari Work.ink!")
-end
+loadstring(game:HttpGet("https://keysystem.work.ink/scripts/01a18fa2-7fda-736b-99c9-c11224629217"))()
